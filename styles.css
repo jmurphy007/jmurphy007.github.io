@@ -1,16 +1,9 @@
-@font-face{
-	/* Link to font: https://www.dafont.com/minecraft.font */
-	font-family: pixelFont;
-	src: url(./minecraft.ttf);
-	font-weight: normal;
-	font-style: normal;
-}
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 body{
 	margin: 0;
 	background-color: #34568B;
-	letter-spacing: 2px;
-	font-family: pixelFont;
+	font-family: 'Press Start 2P', cursive;
 }	
 .topnav {
   background-color: black;
@@ -26,7 +19,7 @@ body{
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 10px;
   font-weight: bolder;
 }
 
@@ -57,7 +50,27 @@ body{
 }
 p{
 	font-family: Arial;
-	letter-spacing: 0px;
 	font-size: 18px;
 	overflow-wrap: break-word;
 }
+.bottomnav {
+  background-color: black;
+  overflow: auto;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.bottomnav a {
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 8px;
+  font-weight: bolder;
+}
+
+.bottomnav a:hover {
+  background-color: #ddd;
+  color: black;
