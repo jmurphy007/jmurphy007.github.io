@@ -1,7 +1,9 @@
 @font-face{
 	/* Link to font: https://www.dafont.com/minecraft.font */
 	font-family: pixelFont;
-	src: url(minecraft.ttf);
+	src: url(./minecraft.ttf);
+	font-weight: normal;
+	font-style: normal;
 }
 
 body{
