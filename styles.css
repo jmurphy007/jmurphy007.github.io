@@ -4,6 +4,7 @@ body{
 	margin: 0;
 	background-color: #34568B;
 	font-family: 'Press Start 2P', cursive;
+	letter-spacing: 1px;
 }	
 .topnav {
   background-color: black;
@@ -49,7 +50,6 @@ body{
 	margin: 0 auto;
 }
 p{
-	font-family: Arial;
 	font-size: 18px;
 	overflow-wrap: break-word;
 }
@@ -67,8 +67,8 @@ p{
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 8px;
-  font-weight: bolder;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .bottomnav a:hover {
