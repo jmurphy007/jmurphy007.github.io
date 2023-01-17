@@ -5,8 +5,9 @@
 		<meta charset="utf-8" />
 		<meta name="author" content="Jordan Murphy" />
 		<meta name="description" content="Jordan Murphy's Portfolio for Game Development and Photography"/>
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="viewport" content="height= device-height, width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="Components/styles.css">
+		<link rel="stylesheet" href="Components/modal.css">
 	</head>
 	<body>
 		<div class = "topnav">
@@ -30,6 +31,37 @@
 				</h4>
 			</div>
 		</div>
+		<div class = "wrapper">
+			<div class = "main">
+				<h3>Most recent game dev project - To The Moon (WIP Title)</h3>
+				<center>
+				<div>
+					<iframe
+						src="https://www.youtube.com/embed/Qqp6v4jUXwQ" 
+						title="To The Moon Demo" 
+						frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+					</iframe>
+				</div>
+				<a class = "gitLink" href="https://github.com/jmurphy007/To-The-Moon-Game">View To the Moon on Github</a>
+				</center>
+			</div>
+		</div>
+		<div class = "wrapper">
+			<div class = "main">
+				<h3>Most recent photos</h3>
+				<center>
+				<div style = "width: 100%; height: auto;">
+					<img style="width:40%; height: auto" class = "myImages" id = "myImg" src="Assets/Photos/Photo (39).jpg" alt="Mountains" style="width:100%">
+					<img style="width:40%; height: auto" class = "myImages" id = "myImg" src="Assets/Photos/Photo (40).jpg" alt="Mountains" style="width:100%">
+				</div>
+				</div></center>
+			</div>
+		</div>
+		<div id="myModal" class="modal">
+			<span class="close">&times;</span>
+			<img class="modal-content" id="img01">
+		</div>
+		<script src="Components/modal.js"></script>
 		<div class = "wrapper">
 			<div class = "main">
 				<table>

@@ -5,8 +5,10 @@
 		<meta charset="utf-8" />
 		<meta name="author" content="Jordan Murphy" />
 		<meta name="description" content="Jordan Murphy's Portfolio for Game Development and Photography"/>
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="viewport" content="height= device-height, width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="../Components/styles.css">
+		<link rel="stylesheet" href="../Components/gallery.css">
+		<link rel="stylesheet" href="../Components/modal.css">
 	</head>
 	<body>
 		<div class = "topnav">
@@ -17,9 +19,288 @@
 		</div>
 		<div class = "wrapper">
 			<div class = "main">
-				<h1>Still working on this page, come back later :)</h1>
+				<h3>Photography - JMurph Photos</h3>
+				<p>
+					I use a combination of my Sony &alpha;6400 and my iPhone 13 Pro Max to take my photos<br>
+					These are some of the photos I have done, there are plenty more on my photography Instagram
+				</p>
+				<center><div id="myBtnContainer">
+					<table>
+						<tr>
+							<td><button class="btn" onclick="filterSelection('sunset')"> Sunset</button></td>
+							<td><button class="btn" onclick="filterSelection('sunset')"> Sunrise</button></td>
+							<td><button class="btn" onclick="filterSelection('black-and-white')"> Black and White</button></td>
+							<td><button class="btn" onclick="filterSelection('autumn')"> Autumn</button></td>
+							<td><button class="btn" onclick="filterSelection('water')"> Water</button></td>
+							<td><button class="btn" onclick="filterSelection('nature')"> Nature</button></td>
+							<td><button class="btn" onclick="filterSelection('city')"> City</button></td>
+						</tr>
+						<tr>
+							<td><button class="btn" onclick="filterSelection('day')"> Day</button></td>
+							<td><button class="btn" onclick="filterSelection('night')"> Night</button></td>
+							<td><button class="btn" onclick="filterSelection('silhouette')"> Silhouette</button></td>
+							<td><button class="btn" onclick="filterSelection('beach')"> Beach</button></td>
+							<td><button class="btn" onclick="filterSelection('animal')"> Animal</button></td>
+							<td><button class="btn" onclick="filterSelection('firework')"> Firework</button></td>
+							<td><button class="btn" onclick="filterSelection('plant')"> Plant</button></td>
+						</tr>
+					</table>
+					<button class="btn" onclick="filterSelection('all')"> Show all</button>
+				</div>
+				<div class="row">
+					<center>
+					<div class="column sunset silhouette nature day water plant">
+						<div class="content">
+							<img class = "myImages" id = "myImg" src="../Assets/Photos/Photo (1).jpg" alt="Mountains" style="width:100%">
+						</div>
+					</div>
+					<div class="column sunset nature day water beach">
+						<div class="content">
+							<img class = "myImages" id = "myImg"  src="../Assets/Photos/Photo (2).jpg" alt="Mountains" style="width:100%">
+						</div>
+					</div>
+					<div class="column autumn nature day plant">
+						<div class="content">
+							<img class = "myImages" id = "myImg"  src="../Assets/Photos/Photo (3).jpg" alt="Mountains" style="width:100%">
+						</div>
+					</div>
+					<div class="column animal">
+						<div class="content">
+							<img class = "myImages" id = "myImg"  src="../Assets/Photos/Photo (4).jpg" alt="Mountains" style="width:100%">
+						</div>
+					</div>
+					<div class="column nature day water plant">
+						<div class="content">
+							<img class = "myImages" id = "myImg"  src="../Assets/Photos/Photo (5).jpg" alt="Mountains" style="width:100%">
+						</div>
+					</div>
+					<div class="column black-and-white autumn city day">
+						<div class="content">
+							<img class = "myImages" id = "myImg"  src="../Assets/Photos/Photo (6).jpg" alt="Mountains" style="width:100%">
+						</div>
+					</div>
+					<div class="column black-and-white night plant">
+						<div class="content">
+							<img class = "myImages" id = "myImg"  src="../Assets/Photos/Photo (7).jpg" alt="Mountains" style="width:100%">
+						</div>
+					</div>
+					<div class="column sunset autumn city day plant">
+						<div class="content">
+							<img class = "myImages" id = "myImg"  src="../Assets/Photos/Photo (8).jpg" alt="Mountains" style="width:100%">
+						</div>
+					</div>
+					<div class="column sunset silhouette city day">
+						<div class="content">
+							<img class = "myImages" id = "myImg"  src="../Assets/Photos/Photo (9).jpg" alt="Mountains" style="width:100%">
+						</div>
+					</div>
+					<div class="column sunset silhouette nature day plant">
+						<div class="content">
+							<img class = "myImages" id = "myImg"  src="../Assets/Photos/Photo (10).jpg" alt="Mountains" style="width:100%">
+						</div>
+					</div>
+					<div class="column night">
+						<div class="content">
+							<img class = "myImages" id = "myImg"  src="../Assets/Photos/Photo (11).jpg" alt="Mountains" style="width:100%">
+						</div>
+					</div>
+					<div class="column animal">
+						<div class="content">
+							<img class = "myImages" id = "myImg"  src="../Assets/Photos/Photo (12).jpg" alt="Mountains" style="width:100%">
+						</div>
+					</div>
+					<div class="column nature day plant">
+						<div class="content">
+							<img class = "myImages" id = "myImg"  src="../Assets/Photos/Photo (13).jpg" alt="Mountains" style="width:100%">
+						</div>
+					</div>
+					<div class="column sunrise silhouette nature day plant">
+						<div class="content">
+							<img class = "myImages" id = "myImg"  src="../Assets/Photos/Photo (14).jpg" alt="Mountains" style="width:100%">
+						</div>
+					</div>
+					<div class="column city night">
+						<div class="content">
+							<img class = "myImages" id = "myImg"  src="../Assets/Photos/Photo (15).jpg" alt="Mountains" style="width:100%">
+						</div>
+					</div>
+					<div class="column city night black-and-white">
+						<div class="content">
+							<img class = "myImages" id = "myImg"  src="../Assets/Photos/Photo (16).jpg" alt="Mountains" style="width:100%">
+						</div>
+					</div>
+					<div class="column day plant">
+						<div class="content">
+							<img class = "myImages" id = "myImg" src="../Assets/Photos/Photo (17).jpg" alt="Mountains" style="width:100%">
+						</div>
+					</div>
+					<div class="column animal">
+						<div class="content">
+							<img class = "myImages" id = "myImg" src="../Assets/Photos/Photo (18).jpg" alt="Mountains" style="width:100%">
+						</div>
+					</div>
+					<div class="column animal">
+						<div class="content">
+							<img class = "myImages" id = "myImg" src="../Assets/Photos/Photo (19).jpg" alt="Mountains" style="width:100%">
+						</div>
+					</div>
+					<div class="column animal">
+						<div class="content">
+							<img class = "myImages" id = "myImg" src="../Assets/Photos/Photo (20).jpg" alt="Mountains" style="width:100%">
+						</div>
+					</div>
+					<div class="column city day water">
+						<div class="content">
+							<img class = "myImages" id = "myImg" src="../Assets/Photos/Photo (21).jpg" alt="Mountains" style="width:100%">
+						</div>
+					</div>
+					<div class="column animal">
+						<div class="content">
+							<img class = "myImages" id = "myImg" src="../Assets/Photos/Photo (22).jpg" alt="Mountains" style="width:100%">
+						</div>
+					</div>
+					<div class="column animal">
+						<div class="content">
+							<img class = "myImages" id = "myImg" src="../Assets/Photos/Photo (23).jpg" alt="Mountains" style="width:100%">
+						</div>
+					</div>
+					<div class="column animal">
+						<div class="content">
+							<img class = "myImages" id = "myImg" src="../Assets/Photos/Photo (24).jpg" alt="Mountains" style="width:100%">
+						</div>
+					</div>
+					<div class="column city day">
+						<div class="content">
+							<img class = "myImages" id = "myImg" src="../Assets/Photos/Photo (25).jpg" alt="Mountains" style="width:100%">
+						</div>
+					</div>
+					<div class="column city night">
+						<div class="content">
+							<img class = "myImages" id = "myImg" src="../Assets/Photos/Photo (26).jpg" alt="Mountains" style="width:100%">
+						</div>
+					</div>
+					<div class="column sunset nature day water beach">
+						<div class="content">
+							<img class = "myImages" id = "myImg" src="../Assets/Photos/Photo (27).jpg" alt="Mountains" style="width:100%">
+						</div>
+					</div>
+					<div class="column city day water">
+						<div class="content">
+							<img class = "myImages" id = "myImg" src="../Assets/Photos/Photo (28).jpg" alt="Mountains" style="width:100%">
+						</div>
+					</div>
+					<div class="column night firework">
+						<div class="content">
+							<img class = "myImages" id = "myImg" src="../Assets/Photos/Photo (29).jpg" alt="Mountains" style="width:100%">
+						</div>
+					</div>
+					<div class="column night firework">
+						<div class="content">
+							<img class = "myImages" id = "myImg" src="../Assets/Photos/Photo (30).jpg" alt="Mountains" style="width:100%">
+						</div>
+					</div>
+					<div class="column night firework">
+						<div class="content">
+							<img class = "myImages" id = "myImg" src="../Assets/Photos/Photo (31).jpg" alt="Mountains" style="width:100%">
+						</div>
+					</div>
+					<div class="column night firework">
+						<div class="content">
+							<img class = "myImages" id = "myImg" src="../Assets/Photos/Photo (32).jpg" alt="Mountains" style="width:100%">
+						</div>
+					</div>
+					<div class="column night firework">
+						<div class="content">
+							<img class = "myImages" id = "myImg" src="../Assets/Photos/Photo (33).jpg" alt="Mountains" style="width:100%">
+						</div>
+					</div>
+					<div class="column night firework">
+						<div class="content">
+							<img class = "myImages" id = "myImg" src="../Assets/Photos/Photo (34).jpg" alt="Mountains" style="width:100%">
+						</div>
+					</div>
+					<div class="column night firework">
+						<div class="content">
+							<img class = "myImages" id = "myImg" src="../Assets/Photos/Photo (35).jpg" alt="Mountains" style="width:100%">
+						</div>
+					</div>
+					<div class="column sunset autumn nature day water plant">
+						<div class="content">
+							<img class = "myImages" id = "myImg" src="../Assets/Photos/Photo (36).jpg" alt="Mountains" style="width:100%">
+						</div>
+					</div>
+					<div class="column sunset silhouette autumn nature day plant">
+						<div class="content">
+							<img class = "myImages" id = "myImg" src="../Assets/Photos/Photo (37).jpg" alt="Mountains" style="width:100%">
+						</div>
+					</div>
+					<div class="column autumn nature day plant">
+						<div class="content">
+							<img class = "myImages" id = "myImg" src="../Assets/Photos/Photo (38).jpg" alt="Mountains" style="width:100%">
+						</div>
+					</div>
+					<div class="column autumn nature day plant">
+						<div class="content">
+							<img class = "myImages" id = "myImg" src="../Assets/Photos/Photo (39).jpg" alt="Mountains" style="width:100%">
+						</div>
+					</div>
+					<div class="column nature night plant">
+						<div class="content">
+							<img class = "myImages" id = "myImg" src="../Assets/Photos/Photo (40).jpg" alt="Mountains" style="width:100%">
+						</div>
+					</div>
+					</center>
+				</div></center>
 			</div>
 		</div>
+		<div id="myModal" class="modal">
+			<span class="close">&times;</span>
+			<img class="modal-content" id="img01">
+		</div>
 		<object style = "width: 100%; position: fixed; bottom: 0;" data = "../Components/bottomnav.html"></object>
+		<script>
+			filterSelection("all")
+				function filterSelection(c) {
+					var x, i;
+					x = document.getElementsByClassName("column");
+					if (c == "all") c = "";
+						for (i = 0; i < x.length; i++) {
+							w3RemoveClass(x[i], "show");
+							if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+					}
+				}
+
+				function w3AddClass(element, name) {
+					var i, arr1, arr2;
+					arr1 = element.className.split(" ");
+					arr2 = name.split(" ");
+					for (i = 0; i < arr2.length; i++) {
+						if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+					}
+				}
+
+				function w3RemoveClass(element, name) {
+					var i, arr1, arr2;
+					arr1 = element.className.split(" ");
+					arr2 = name.split(" ");
+					for (i = 0; i < arr2.length; i++) {
+						while (arr1.indexOf(arr2[i]) > -1) {
+							arr1.splice(arr1.indexOf(arr2[i]), 1);     
+						}
+					}
+					element.className = arr1.join(" ");
+					}
+
+				var btnContainer = document.getElementById("myBtnContainer");
+				var btns = btnContainer.getElementsByClassName("btn");
+				for (var i = 0; i < btns.length; i++) {
+					btns[i].addEventListener("click", function(){
+					var current = document.getElementsByClassName("active");
+					current[0].className = current[0].className.replace(" active", "");
+					this.className += " active";
+					});
+				}
+		</script>
+		<script src="../Components/modal.js"></script>
 	</body>
 </html>
