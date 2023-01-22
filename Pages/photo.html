@@ -28,28 +28,27 @@
 					I use a combination of my Sony &alpha;6400 and my iPhone 13 Pro Max to take my photos<br>
 					These are some of the photos I have done, there are plenty more on my photography Instagram
 				</p>
-				<center><div id="myBtnContainer">
-					<table>
-						<tr>
-							<td><button class="btn" onclick="filterSelection('sunset')"> Sunset</button></td>
-							<td><button class="btn" onclick="filterSelection('sunset')"> Sunrise</button></td>
-							<td><button class="btn" onclick="filterSelection('black-and-white')"> Black and White</button></td>
-							<td><button class="btn" onclick="filterSelection('autumn')"> Autumn</button></td>
-							<td><button class="btn" onclick="filterSelection('water')"> Water</button></td>
-							<td><button class="btn" onclick="filterSelection('nature')"> Nature</button></td>
-							<td><button class="btn" onclick="filterSelection('city')"> City</button></td>
-						</tr>
-						<tr>
-							<td><button class="btn" onclick="filterSelection('day')"> Day</button></td>
-							<td><button class="btn" onclick="filterSelection('night')"> Night</button></td>
-							<td><button class="btn" onclick="filterSelection('silhouette')"> Silhouette</button></td>
-							<td><button class="btn" onclick="filterSelection('beach')"> Beach</button></td>
-							<td><button class="btn" onclick="filterSelection('animal')"> Animal</button></td>
-							<td><button class="btn" onclick="filterSelection('firework')"> Firework</button></td>
-							<td><button class="btn" onclick="filterSelection('plant')"> Plant</button></td>
-						</tr>
-					</table>
-					<button class="btn" onclick="filterSelection('all')"> Show all</button>
+				<div id="myBtnContainer">
+					<center>
+						<select id = "photoTags" name = "photoTags">
+							<option value ="all">Show all</option>
+							<option value ="sunset">Sunset</option>
+							<option value ="sunrise">Sunrise</option>
+							<option value ="black-and-white">Black and White</option>
+							<option value ="autumn">Autumn</option>
+							<option value ="water">Water</option>
+							<option value ="nature">Nature</option>
+							<option value ="city">City</option>
+							<option value ="day">Day</option>
+							<option value ="night">Night</option>
+							<option value ="silhouette">Silhouette</option>
+							<option value ="beach">Beach</option>
+							<option value ="animal">Animal</option>
+							<option value ="firework">Firework</option>
+							<option value ="plant">Plant</option>
+						</select>
+						<button class="btn" onclick="filterSelection(GetSelectedTextValue())">Show Results</button>
+					</center>
 				</div>
 				<div class="row">
 					<center>
@@ -264,6 +263,13 @@
 		<object style = "width: 100%; position: fixed; bottom: 0;" data = "../Components/bottomnav.html"></object>
 		<script>
 			filterSelection("all")
+			
+				function GetSelectedTextValue() {
+					var photoTags = document.getElementById("photoTags");
+					var selectedText = photoTags.options[photoTags.selectedIndex].innerHTML;
+					var selectedValue = photoTags.value;
+					return(selectedValue);
+				}
 				function filterSelection(c) {
 					var x, i;
 					x = document.getElementsByClassName("column");
