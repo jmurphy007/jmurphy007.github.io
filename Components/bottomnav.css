@@ -31,3 +31,23 @@ body{
 	letter-spacing: 1px;
 	font-size: 10px;
 }
+@media all {
+	.mobile-display{display:none}
+	.desktop-display{display:block}
+	.bottomnav p {
+		padding-left: 5px; 
+		color:white; 
+		font-size: 8px; 
+		width: 25%;
+	}
+}
+@media (max-width: 800px) {
+	.mobile-display{display:block}
+	.desktop-display{display:none}
+	.bottomnav p {
+		padding-left: 5px; 
+		color:white; 
+		font-size: 5px; 
+		width: 20%;
+	}
+)
