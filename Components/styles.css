@@ -79,6 +79,25 @@ img{
 	0%{opacity:0;}
 	100%{opacity:1;}
 }
+#topBtn{
+	display: none;
+	position: fixed;
+	bottom: 150px;
+	right: 30px;
+	z-index: 99;
+	border: none;
+	border-radius: 50%;
+	padding: 15px;
+	font-size: 15px;
+	color: #f2f2f2;
+	background-color: black;
+	font-family: 'Press Start 2P', cursive;
+	opacity: 0;
+}
+#topBtn:hover{
+	background-color: #ddd;
+	color: black;
+}
 @media all {
 	.mobile-display{display:none}
 	.desktop-display{display:block}

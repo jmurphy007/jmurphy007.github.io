@@ -261,9 +261,10 @@
 			<img class="modal-content" id="img01">
 		</div>
 		<object style = "width: 100%; position: fixed; bottom: 0;" data = "../Components/bottomnav.html"></object>
+		<button onclick="toTop()" id="topBtn" title="Go to top">&#8593;</button>
+		<script src="../Components/topButton.js"></script>
 		<script>
 			filterSelection("all")
-			
 				function GetSelectedTextValue() {
 					var photoTags = document.getElementById("photoTags");
 					var selectedText = photoTags.options[photoTags.selectedIndex].innerHTML;
