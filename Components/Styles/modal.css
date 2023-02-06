@@ -25,9 +25,9 @@
 .modal-content {
 	margin: auto;
 	display: block;
-	width: auto;
+	width: 80%;
 	height: auto;
-	max-width: 700px;
+	border-radius: 5px;
 }
 @keyframes zoom {
 	from {
@@ -40,10 +40,10 @@
 
 .close {
 	position: absolute;
-	top: 15%;
-	right: 20%;
+	top: 10%;
+	right: 5%;
 	color: #f1f1f1;
-	font-size: 30px;
+	font-size: 45px;
 	font-weight: bold;
 	transition: 0.15s;
 	z-index: 1001;
@@ -54,10 +54,4 @@
 	color: #bbb;
 	text-decoration: none;
 	cursor: pointer;
-}
-
-@media only screen and (max-width: 700px) {
-	.modal-content {
-		width: 100%;
-	}
 }
