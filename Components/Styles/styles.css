@@ -171,7 +171,7 @@ img{
 		padding: 10px;
 	}
 	#tool{
-		width: 250px;
+		width: 30%;
 		height: auto;
 		margin: 0 auto;
 		float: right;
@@ -189,8 +189,8 @@ img{
 		margin-bottom: 75px;
 	}
 	#tallimg{
-		height: 450px;
-		width: auto;
+		width: 15%;
+		height: auto;
 		float: left;
 		margin: 0 auto;
 		padding: 10px;
