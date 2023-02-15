@@ -7,9 +7,34 @@ body{
 	letter-spacing: 1px;
 	line-height: 1.25;
 }	
-.topnav {
+.bottomnav {
 	background-color: black;
 	overflow: auto;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	z-index:100;
+}
+.bottomnav a {
+	float: right;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 12px 14px;
+	text-decoration: none;
+	font-size: 20px;
+}
+.bottomnav a:hover {
+	background-color: #ddd;
+	color: black;
+}
+.bottomtext{
+	font-family: 'Press Start 2P', cursive;
+	letter-spacing: 1px;
+	font-size: 10px;
+}
+.topnav {
+	background-color: black;
+	overflow: visible;
 	position: fixed;
 	top: 0;
 	width: 100%;
@@ -23,12 +48,48 @@ body{
 	text-decoration: none;
 	font-size: 10px;
 }
-.topnav a:hover {
+.topnav a:hover, .dropbtn:hover, .dropbtn:focus{
 	background-color: #ddd;
 	color: black;
 }
-.topnav a.active {
-	color: #e60000;
+.topnav a.active, .dropbtn.active {
+  color: red;
+}
+.dropdown {
+	float: left;
+	overflow: hidden;
+}
+.dropbtn{
+	cursor: pointer;
+	font-size: 10px;
+	border: none;
+	color: #f2f2f2;
+	padding: 10px 10px;
+	background-color: black;
+	font-family: inherit;
+	margin: 0;
+}
+.dropdown-content{
+	display: none;
+	position: absolute;
+}
+.dropdown-content a {
+	float: none;
+	color: #f2f2f2;
+	background-color: black;
+	text-align: center;
+	padding: 10px 10px;
+	text-decoration: none;
+	font-size: 10px;
+	text-align: center;
+	display: block;
+}
+.dropdown-content a:hover {
+	background-color: #ddd;
+	color: black;
+}
+.show{
+	display:block;
 }
 .main{
 	width: 80%;
@@ -109,6 +170,13 @@ img{
 		margin: 0 auto;
 		padding: 10px;
 	}
+	#tool{
+		width: 250px;
+		height: auto;
+		margin: 0 auto;
+		float: right;
+		padding: 10px;
+	}
 	.wrapper{
 		margin-top: 100px;
 		width: 100%;
@@ -163,6 +231,12 @@ img{
 		color: #e60000;
 		text-decoration-line: underline;
 	}
+	.bottomnav p {
+		padding-left: 5px; 
+		color:white; 
+		font-size: 8px; 
+		width: 25%;
+	}
 }
 @media (max-width: 800px) {
 	.mobile-display{display:block}
@@ -173,6 +247,13 @@ img{
 		border-radius: 50%;
 		float: right;
 		margin: 0 auto;
+		padding: 5px;
+	}
+	#tool{
+		width: 125px;
+		height: auto;
+		margin: 0 auto;
+		float: right;
 		padding: 5px;
 	}
 	.wrapper{
@@ -228,5 +309,11 @@ img{
 		text-align: left;
 		color: #e60000;
 		text-decoration-line: underline;
+	}
+	.bottomnav p {
+		padding-left: 5px; 
+		color:white; 
+		font-size: 5px; 
+		width: 20%;
 	}
 }
