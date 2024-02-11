@@ -9,15 +9,15 @@ if (currentFile == "about.html"){
 			<a class = "active" href="about.html">About</a>
 			<div class = "dropdown">
 				<button onclick = "openGame()" class = "dropbtn dropbtnGame">Game Dev<i class="fa fa-caret-down"></i></button>
-				<div id = "myDropdown" class = "dropdown-content">
+				<div id = "myDropdownGame" class = "dropdown-content">
 					<a href="gameDevGames.html">Game Projects</a>
 					<a href="gameDevModels.html">3D Models</a>
 					<a href="gameDevTools.html">My Tools</a>
 				</div>
 			</div>
 			<div class = "dropdown">
-				<button onclick = "openPhoto()" class = "dropbtn dropbtnPhoto ">Photography<i class="fa fa-caret-down"></i></button>
-				<div id = "myDropdown" class = "dropdown-content">
+				<button onclick = "openPhoto()" class = " dropbtn dropbtnPhoto">Photography<i class="fa fa-caret-down"></i></button>
+				<div id = "myDropdownPhoto" class = "dropdown-content">
 					<a href="photo.html">Gallery</a>
 					<a href="photoTools.html">My Tools</a>
 				</div>
